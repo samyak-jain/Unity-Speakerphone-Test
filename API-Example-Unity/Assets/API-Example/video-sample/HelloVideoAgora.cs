@@ -43,6 +43,7 @@ public class HelloVideoAgora : MonoBehaviour {
 		mRtcEngine.EnableAudio();
 		mRtcEngine.EnableVideo();
 		mRtcEngine.EnableVideoObserver();
+        mRtcEngine.SetEnableSpeakerphone(true);
         mRtcEngine.OnJoinChannelSuccess += OnJoinChannelSuccessHandler;
         mRtcEngine.OnLeaveChannel += OnLeaveChannelHandler;
         mRtcEngine.OnWarning += OnSDKWarningHandler;
